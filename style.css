@@ -20,7 +20,7 @@ body{
 
 .user-box img{
     border-radius: 50%;
-    width: 250px;
+    width: 600px;
     border: 2px solid #6caed5;
 }
 
@@ -66,14 +66,18 @@ body{
 /* About */
 .about{
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+}
+
+.skills{
+    margin-bottom: -180px;
 }
 
 .profile-img{
     border: 10px solid #bbb;
     border-radius: 25px;
     margin-top: 100px;
-    height: 400px;
+    height: 420px;
 }
 
 .nav-bar{
@@ -195,4 +199,129 @@ body{
     height: 20px;
     z-index: 1;
     color: #fff !important;
+}
+
+/* Services */
+
+.services{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.services h1{
+    margin-bottom: 15px;
+}
+
+.services-box{
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-top: 20px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.services-box .fa{
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.services-box span{
+    margin: 3px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.services-box p{
+    font-size: 15px;
+    margin-top: 20px;
+    color: #777;
+}
+
+.services-box:hover{
+    background-color: #000;
+    color: #fff;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 1s;
+}
+
+.services-box:hover p{
+    color: #fff;
+}
+
+/* Contact */
+
+.contact{
+    padding-top: 50px;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img/background.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.contact .row {
+    padding: 30px 0;
+    font-size: 22px;
+}
+
+.contact .col-md-4 .fa{
+    padding: 10px;
+    font-size: 40px;
+}
+
+.contact .btn{
+    padding: 10px 25px;
+    margin: 5px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 20px;
+}
+
+.contact .btn:focus{
+    box-shadow: none !important;
+}
+
+.contact .btn:hover{
+    border: 2px solid #000 !important;
+    background: #000 !important;
+    transition: 0.6s;
+}
+
+.contact .btn .fa {
+    margin-right: 10px;
+}
+
+/* Social icons */
+
+.social-icons{
+    top: 50%;
+    transform: translateY(-50%);
+    position: sticky;
+    z-index: 1;
+    width: 80px;
+}
+
+.social-icons ul{
+    padding: initial;
+}
+
+.social-icons ul li{
+    height: 40px;
+    width: 40px;
+    list-style-type: none;
+    padding-left: 12px;
+    padding-top: 6px;
+    margin-top: 5px;
+    color: #fff;
+    background-color: #000;
+}
+
+.social-icons ul li:hover{
+    padding-left: 30px;
+    width: 80px;
+    transition: 0.8s;
 }
