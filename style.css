@@ -20,7 +20,7 @@ body{
 
 .user-box img{
     border-radius: 50%;
-    width: 600px;
+    width: 70%;
     border: 2px solid #6caed5;
 }
 
@@ -76,8 +76,9 @@ body{
 .profile-img{
     border: 10px solid #bbb;
     border-radius: 25px;
-    margin-top: 100px;
-    height: 420px;
+    margin-top: 130px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .nav-bar{
@@ -182,6 +183,10 @@ body{
     font-size: 15px;
 }
 
+.timeline li p{
+    margin-left: 5px;
+}
+
 .timeline li h4 span{
     font-weight: bold;
     color:#ccc;
@@ -200,6 +205,26 @@ body{
     z-index: 1;
     color: #fff !important;
 }
+
+#uni-results{
+    margin-left:20px;
+}
+
+#uni-results .fa{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#hs-results{
+    margin-left:20px;
+}
+
+#hs-results .fa{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
 
 /* Services */
 
@@ -325,3 +350,12 @@ body{
     width: 80px;
     transition: 0.8s;
 }
+
+@media only screen and (max-width: 767px) {
+    .profile-img{
+        margin-top: 30px;
+    }
+    .user-box img{
+        width:100%;
+    }
+  }

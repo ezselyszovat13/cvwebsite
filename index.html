@@ -15,7 +15,7 @@
     <header id="header">
         <div class="container text-center">
             <div class="user-box">
-                <img src="img/img1.jpg" alt="">
+                <img src="img/img1.jpg" class="img-responsive" alt="">
                 <h1>Ézsely Szovát</h1>
                 <p>Freelance Software Developer</p>
             </div> 
@@ -65,8 +65,8 @@
         <!-- About -->
         <div class="about container" id="about">
             <div class="row">
-                <div class="col-md-6 text-center">
-                    <img src="img/img2.png" class="profile-img" alt="">
+                <div class="col-md-6">
+                    <img src="img/img2.png" class="profile-img img-responsive" alt="">
                 </div>
                 <div class="col-md-6">
                     <h3>WHO AM I?</h3>
@@ -102,7 +102,9 @@
                 </div>
             </div>
         </div>
+
         <!-- Skills -->
+
         <div class="skills container" id="skills">
             <div class="row">
                 <div class="col-md-6 text-center col-centered">
@@ -181,7 +183,7 @@
                                 <p>Developing an access control system, which also manages working hours in countless options and operates all over the country.</p>
                             </li>
                             <li>
-                                <h4><span>[August 2021 – ongoing]</span> Trainee at Kopint Datorg Kft.</h4>
+                                <h4><span>[September 2021 – ongoing]</span> Trainee at Kopint Datorg Kft.</h4>
                                 <p>Doing manual and automatic testing in web environment in numerous projects.</p>
                             </li>
                         </ul>
@@ -194,6 +196,11 @@
                             <li>
                                 <h4><span>[September 2013 - May 2017]</span> Software development</h4>    
                                 <p>Jedlik Ányos Secondary School, Győr</p>
+                                <p id="hs-results">
+                                    <span>
+                                        <i class="fa fa-trophy"></i><b>Jedlik medal</b>, golden degree<br/>
+                                    </span>
+                                </p>
                             </li>
                             <li>
                                 <h4><span>[September 2017 - May 2018]</span> Software development (OKJ)</h4>    
@@ -202,6 +209,14 @@
                             <li>
                                 <h4><span>[September 2018 - July 2021]</span> Computer Science </h4>    
                                 <p>Eötvös Loránd University, Budapest</p>
+                                <p id="uni-results">
+                                    <span>
+                                        <i class="fa fa-graduation-cap"></i>Graduated with <b>"honoured"</b> degree <br/>
+                                    </span>
+                                    </span>
+                                        <i class="fa fa-users"></i>&nbspFormal member of <b> Neumann János Talent Group </b>
+                                    </span>
+                                </p>
                             </li>
                             <!-- <li>
                                 <h4><span>[September 2021 - ongoing]</span> Data Science</h4>    
@@ -223,26 +238,34 @@
                         <div class="services-box">
                             <i class="fa fa-rocket"></i><span> Learn for learning</span>
                             <p>These project was my bachelor's thesis to help students
-                               to find which optional course they should to get the best results.
-                               Main development environment: <b>Laravel</b>
+                               to find which optional course they should to get the best results. <br/><br/>
+                               Main development environment: <b>Laravel (PHP)</b>
                             </p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="services-box">
                             <i class="fa fa-gamepad"></i><span> Labyrinth</span>
-                            <p>These project was my bachelor's thesis to help students
-                               to find which optional course they should to get the best results.
-                               Main development environment: <b>Laravel</b>
+                            <p>Since I could not find one of my favourite games from my childhood I stated to develop it again, based on the details I remembered. <br/><br>
+                               Main development environment: <b>Laravel (PHP)</b>
                             </p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="services-box">
                             <i class="fa fa-laptop"></i><span> Cosmetics</span>
-                            <p>These project was my bachelor's thesis to help students
-                               to find which optional course they should to get the best results.
-                               Main development environment: <b>Laravel</b>
+                            <p>My mother is self-employed in our village as a cosmetician. Therefore I try to create an appointment website for her to broaden the number of guests day by day. <br/><br>
+                                Main development environment: <b>Laravel (PHP)</b>
+                             </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="services-box">
+                            <i class="fa fa-rocket"></i><span> Settlers of Catan</span>
+                            <p>During my university studies we had a class where we had to form groups and create a software program. For us, it was Settlers of Catan which was a interesting projects because of its hexagon shapes. <br/><br/>
+                               Main development environment: <b>Qt (C++)</b>
                             </p>
                         </div>
                     </div>
@@ -271,9 +294,9 @@
                 <a href="cv.pdf" class="btn btn-dark" download>
                     <i class="fa fa-download"></i>Resume
                 </a>
-                <a href="#" class="btn btn-dark">
+                <button type="button" id="hire" class="btn btn-dark">
                     <i class="fa fa-rocket"></i>Hire me
-                </a>
+                </button>
             </div>
         </div>
 
@@ -281,6 +304,12 @@
         <script src="smooth-scroll.js"></script>
         <script>
             var scroll = new SmoothScroll('a[href*="#"]');
+
+            const button = document.getElementById('hire');
+
+            button.addEventListener('click', event => {
+                alert("You can find my contact above the button! :)");
+            });
         </script>
 
     </section>
